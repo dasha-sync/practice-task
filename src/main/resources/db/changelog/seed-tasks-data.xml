@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="002-seed-tasks-data" author="system">
+        <insert tableName="tasks">
+            <column name="name" value="Задача 1"/>
+            <column name="text" value="Описание задачи 1"/>
+            <column name="assigned_to" valueComputed="CURRENT_TIMESTAMP + INTERVAL '1 day'"/>
+        </insert>
+        <insert tableName="tasks">
+            <column name="name" value="Задача 2"/>
+            <column name="text" value="Описание задачи 2"/>
+            <column name="assigned_to" valueComputed="CURRENT_TIMESTAMP + INTERVAL '2 days'"/>
+        </insert>
+        <insert tableName="tasks">
+            <column name="name" value="Задача 3"/>
+            <column name="text" value="Описание задачи 3"/>
+            <column name="assigned_to" valueComputed="CURRENT_TIMESTAMP + INTERVAL '3 days'"/>
+        </insert>
+        <insert tableName="tasks">
+            <column name="name" value="Задача 4"/>
+            <column name="text" value="Описание задачи 4"/>
+            <column name="assigned_to" valueComputed="CURRENT_TIMESTAMP + INTERVAL '4 days'"/>
+        </insert>
+        <insert tableName="tasks">
+            <column name="name" value="Задача 5"/>
+            <column name="text" value="Описание задачи 5"/>
+            <column name="assigned_to" valueComputed="CURRENT_TIMESTAMP + INTERVAL '5 days'"/>
+        </insert>
+        <insert tableName="tasks">
+            <column name="name" value="Задача 6"/>
+            <column name="text" value="Описание задачи 6"/>
+            <column name="assigned_to" valueComputed="CURRENT_TIMESTAMP + INTERVAL '6 days'"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
